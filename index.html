@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="intro-screen">
+        <div class="frame-container">
+            <img src="assets/pngwing.com.png" alt="Marco Friends" class="intro-frame">
+            <button id="start-btn" class="intro-text">Presiona aquí</button>
+        </div>
+    </div>
 
     <!-- Botón para la música (los navegadores bloquean el autoplay, se requiere interacción) -->
-    <button id="musicBtn" class="music-btn">🎵 Toca para la música</button>
+    <button id="musicBtn" class="music-btn">Toca aqui 🎵</button>
     <audio id="bgMusic" loop>
         <source src="assets/cancion.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
@@ -20,39 +26,57 @@
     <!-- Bloque 1: Introducción -->
     <section class="view-section">
         <div class="content reveal">
-            <h1 class="friends-title">I.N.V.I.T.A.C.I.O.N</h1>
-            <h2>El episodio donde celebramos a [Nombre]</h2>
+            <h1 class="friends-title">A.N.D.Y</h1>
+            <h2>¿Lista para comenzar esta aventura?</h2>
             <p>Desliza hacia abajo para descubrir más...</p>
             <!-- Ejemplo de imagen -->
-            <!-- <img src="assets/foto1.jpg" alt="Amiga" class="photo-frame"> -->
+            <img src="assets/foto1.jpeg" alt="Amiga" class="photo-frame">
         </div>
     </section>
 
     <!-- Bloque 2: Fecha y Mensaje -->
     <section class="view-section">
         <div class="content reveal">
-            <h2>¿Cuándo?</h2>
-            <p>Este sábado 25 de Octubre a las 8:00 PM</p>
-            <p>Prepara tus mejores chistes y tu apetito. No aceptamos un "estábamos en un break" como excusa para faltar.</p>
+            <h1 class="title">El episodio comienza en:</h1>
+            <div id="countdown-display" class="chalkboard-timer"></div>
+            <h2>Viernes 22 de mayo del 2026</h2>
+            <h2>A las 13:00 hrs</h2>
+            <img src="assets/foto2.jpeg" alt="Amiga" class="photo-frame">
         </div>
     </section>
 
     <!-- Bloque 3: Ubicación -->
-    <section class="view-section">
+   <section class="view-section">
         <div class="content reveal">
-            <h2>El Central Perk (Ubicación)</h2>
-            <p>Nos vemos en el departamento de Mónica (o bueno, en esta dirección):</p>
-            <p><strong>Calle Falsa 123, Colonia Centro</strong></p>
-            <!-- Puedes embeber un mapa de Google aquí -->
+            <div class="chalkboard-timer" style="margin-bottom: 20px;">
+                ¿Dónde?
+            </div>
+            <h2>
+                <a href="https://maps.app.goo.gl/zBikkLdjQqAz5ujFA" target="_blank" style="color: var(--friends-yellow); text-decoration: underline;">
+                    ¡En Central Perk!
+                </a>
+            </h2>
+            <p>Click aqui ⬆️</p>
+            <img src="assets/foto3.jpeg" alt="Amiga" class="photo-frame">
         </div>
     </section>
 
-    <!-- Bloque 4: Información extra -->
     <section class="view-section">
-        <div class="content reveal frame-box">
-            <h2>Código de Vestimenta</h2>
-            <p>Casual. Si vienes disfrazado de armadillo navideño, tienes puntos extra.</p>
-            <p><strong>Por favor confirma tu asistencia antes del viernes.</strong></p>
+        <div class="content reveal">
+            <div class="chalkboard-timer" style="margin-bottom: 20px;">
+                Código de vestimenta
+            </div>
+            <h2>Con ganas de muchas fotos instagrameables pero a la vez cómoda, tú sabes cómo</h2>
+            <img src="assets/foto4.jpeg" alt="Amiga" class="photo-frame">
+        </div>
+    </section>
+
+    <section class="view-section">
+        <div class="content reveal">
+            <div class="chalkboard-timer">
+                Te espera con ansias, tu amiga Rachel (Adri jijiji)
+            </div>
+            <img src="assets/foto7.jpeg" alt="Amiga" class="photo-frame">
         </div>
     </section>
 
