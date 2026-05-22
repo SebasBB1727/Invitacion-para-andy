@@ -1,0 +1,91 @@
+/* Variables de color temáticas */
+:root {
+    --friends-purple: #6a4c9c;
+    --friends-yellow: #f4c93d;
+    --text-light: #f8f9fa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--friends-purple);
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Gochi Hand', cursive;
+    letter-spacing: 2px;
+}
+
+.friends-title {
+    font-size: 3rem;
+    color: var(--text-light);
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Forzar que cada sección ocupe toda la pantalla */
+.view-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 600px;
+    padding: 30px;
+}
+
+/* El marco amarillo icónico para resaltar información */
+.frame-box {
+    border: 8px solid var(--friends-yellow);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* === ESTADOS DE ANIMACIÓN === */
+.reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botón flotante de música */
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: var(--friends-yellow);
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.music-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para imágenes que agregues */
+.photo-frame {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--friends-yellow);
+    border-radius: 5px;
+    margin-top: 20px;
+}
