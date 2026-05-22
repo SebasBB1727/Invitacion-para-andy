@@ -74,11 +74,11 @@ p {
 
 .content {
     /* 1. Ancho relativo (Responsividad base) */
-    width: 90%; 
+    width: 99%; 
     /* 2. Límite máximo (Control en pantallas grandes) */
     max-width: 1000px; 
     /* 3. Espaciado interno (Respiración del texto) */
-    padding: 30px; 
+    padding: 1px; 
     /* 4. Modelo de cálculo matemático */
     box-sizing: border-box;
 }
