@@ -37,20 +37,29 @@ p {
 }
 
 .friends-title {
-    font-size: 7rem;
-    color: var(--text-light);
-    text-shadow: 2px 2px 0px #000;
-    background-color: #2c3e50; /* Color pizarra */
-    border: 6px solid #8b5a2b; /* Marco de madera oscuro */
+    background-color: #2c3e50; 
+    border: 6px solid #8b5a2b; 
     border-radius: 8px;
-    padding: 15px 30px;
+    
+    /* 1. Reducimos el padding lateral para que no quite espacio vital en móviles */
+    padding: 10px;
+    
     font-family: 'Gochi Hand', cursive;
     font-size: 3rem;
-    color: #f8f9fa; /* Color tiza */
+    color: #f8f9fa; 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.5);
-    min-width: 280px;
     text-align: center;
     letter-spacing: 3px;
+    
+    /* 2. Control de Ancho Responsivo */
+    width: 100%; /* Que tome el espacio disponible de su contenedor */
+    max-width: 1000px; /* Un tope máximo para que no se estire demasiado en PC */
+    
+    /* 3. El cálculo matemático estricto */
+    box-sizing: border-box; 
+    
+    /* 4. Centrado absoluto y eliminación de márgenes laterales residuales */
+    margin: 0 auto;
 }
 
 /* Forzar que cada sección ocupe toda la pantalla */
@@ -121,7 +130,7 @@ p {
     height: auto;
     border: 5px solid var(--friends-yellow);
     border-radius: 5px;
-    width: 40%;       /* 👇 OCUPA EL 40% DEL CONTENEDOR MORADO 👇 */
+    width: 50%;       /* 👇 OCUPA EL % DEL CONTENEDOR MORADO 👇 */
     height: auto;     /* 👈 CRÍTICO: Mantiene el aspecto original */
     display: block;   /* Necesario para centrar */
     margin: 30px auto 0 auto; /* Centra horizontalmente */
@@ -202,18 +211,4 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
-}
-
-.chalkboard-timer {
-    background-color: #2c3e50; /* Color pizarra */
-    border: 6px solid #8b5a2b; /* Marco de madera oscuro */
-    border-radius: 8px;
-    padding: 15px 30px;
-    font-family: 'Gochi Hand', cursive;
-    font-size: 3rem;
-    color: #f8f9fa; /* Color tiza */
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.5);
-    min-width: 280px;
-    text-align: center;
-    letter-spacing: 3px;
 }
